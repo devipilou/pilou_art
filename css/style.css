@@ -1,0 +1,36 @@
+/* 
+*MAJ par Pilou 17/09/2021
+* 
+ */
+
+/* General */
+*, *:before, *:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+body{
+    background: #606060;
+    background: -moz-linear-gradient(-45deg, #606060 0%, #D8EBFF 100%);
+    background: -webkit-linear-gradient(-45deg, #606060 0%, #D8EBFF 100%);
+    background: linear-gradient(135deg, #606060 0%, #D8EBFF 100%);
+}
+
+
+/* Nav */
+nav a, .nav-link{
+    color: #fa6b05;
+}
+nav a:hover, .nav-link:hover{
+    color: #ffc396;
+}
+.navbar-brand{
+    font-family: 'Kaushan script';
+}
+
+/* Header */
+header{
+    background: center contain no-repeat url("img\MindmapWeb.jpg");
+    height: 40vh;
+}
