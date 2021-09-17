@@ -8,13 +8,17 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat';
+
 }
 body{
+    height: 100vh;
+    font-family: 'Montserrat';
+    font-size: 1rem;
     background: #606060;
     background: -moz-linear-gradient(-45deg, #606060 0%, #D8EBFF 100%);
     background: -webkit-linear-gradient(-45deg, #606060 0%, #D8EBFF 100%);
     background: linear-gradient(135deg, #606060 0%, #D8EBFF 100%);
+    
 }
 
 
@@ -26,11 +30,15 @@ nav a:hover, .nav-link:hover{
     color: #ffc396;
 }
 .navbar-brand{
+    font-size: 1.5em;
     font-family: 'Kaushan script';
 }
 
 /* Header */
 header{
-    background: center contain no-repeat url("img\MindmapWeb.jpg");
+    background: url('img\MindmapWeb.jpg');
+    background-size: cover;
     height: 40vh;
 }
+/* Main */
+/* Footer */
