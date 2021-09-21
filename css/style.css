@@ -14,7 +14,7 @@ body{
     height: 100vh;
     font-family: 'Montserrat';
     font-size: 1rem;
-    background: #D8EBFF;
+    background: #D6EAFF;
 
 }
 
@@ -26,15 +26,28 @@ nav a, .nav-link{
 nav a:hover, .nav-link:hover{
     color: #ffc396;
 }
+nav a.active{
+    color: #D6EAFF;
+}
 .navbar-brand{
     font-size: 1.5em;
     font-family: 'Kaushan script';
 }
 
+
+
 /* Header */
 header{
-    height: 80vh;
-
+    padding-top: 5em;
 }
+h1, h2, h3{
+    font-family: 'Kaushan script';
+    color: #333333;
+}
+.carouselBtn{
+    color: #fa6b05;
+    font-weight: 2em;
+}
+
 /* Main */
 /* Footer */
