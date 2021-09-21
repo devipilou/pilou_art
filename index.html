@@ -24,41 +24,13 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md bg-dark fixed-top" id="mainNav">
-        <div class="container">
-            
-            <a href="index.html" class="navbar-brand">
-                <img src="img\ThornsWeb.jpg" alt="Logo-Art-By-Pilou" height="50">
-                Art by Pilou
-            </a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mr-1">
-                        <a href="index.html#top" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item mr-1">
-                        <a href="gallery.html#top" class="nav-link">Gallery</a>
-                    </li>
-                    <li class="nav-item mr-1">
-                        <a href="about.html#top" class="nav-link">About Me</a>
-                    </li>
-                    <li class="nav-item mr-1">
-                        <a href="contact.html#top" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
- 
+<body class="container-fluid" id="top">
+
+
 <!-- header -->
-    <header class="container-fluid text-center row" id="top">
-        <div class="container col-lg"id="carousel" >
-            <div class="carousel slide carousel-fade carousel-dark" id="carouselExemple" data-ride="carousel" data-interval="3000">
+    <main class="container-fluid text-center row" >
+        <div class="container col-lg-7"id="carousel" >
+            <div class="carousel slide carousel-fade" id="carouselExemple" data-ride="carousel" data-interval="3000">
                 <div class="carousel-inner w-100 mx-auto border border-dark rounded-3">
                     <div class="carousel-item active">
                         <img src="img\MindmapWeb.jpg" class="d-block img-fluid">
@@ -69,45 +41,49 @@
                     <div class="carousel-item">
                         <img src="img\ThreeWeb.jpg" class="d-block img-fluid">
                     </div>
-                    <a href="#carouselExemple" role="button" class="carousel-control-prev carouselBtn" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Précédent</span>
-                    </a>
-                    <a href="#carouselExemple" role="button" class="carousel-control-next carouselBtn" data-slide="next">
-                        <span class="visually-hidden">Suivant</span>
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
-                    <ol class="carousel-indicators">
-                        <li class="active" data-target="#carouselExemple" data-slide-to="0"></li>
-                        <li data-target="#carouselExemple" data-slide-to="1"></li>
-                        <li data-target="#carouselExemple" data-slide-to="2"></li>
-                    </ol>
+
                 </div>
             </div>
         </div>
-        <div class="col-lg m-auto">
-            <h2 class="display-4 text-intro">Welcome to</h2>
-            <h1 class="display-2 text-intro">Pilou Art-Gallery</h1>
+        <div class="col-lg-5 row">
+            <!-- Dropdown Menu -->
+            <div class="navbar bg-transparent align-items-start" id="mainNav">
+                <div class="container">
+                    <button class="navbar-toggler btn btn-dark mx-auto" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navToggler">Menu</span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav btn btn-dark">
+                            <li class="nav-item">
+                                <a href="home.html#top" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="gallery.html#top" class="nav-link">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html#top" class="nav-link">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html#top" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Titre -->
+            <div class="mx-auto mt-auto justify-content-center align-items-end">
+                <h2 class="display-4">Welcome to</h2>
+                <h1 class="display-2">Pilou Art-Gallery</h1>
+                <button class="btn btn-dark mt-5">
+                    <a href="home.html#top" class="nav-link">Enter here</a>
+                </button>
+            </div>
         </div>
 
-    </header>
-    <main class="container border-top border-dark mt-2">
-        <span class=""></span>
-        <section id="gallery">
-            <h3>Art-gallery</h3>
-        </section>
-        <section id="about-me">
-            <h3>About me</h3>
-        </section>
-        <section id="social-medias">
-            <h3>Where to find me</h3>
-        </section>
     </main>
+
     <footer>
-        <div class="row">
-            <div class="col">FootMenu</div>
-            <div class="col">Links</div>
-        </div>
+
 
     </footer>
 

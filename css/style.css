@@ -15,11 +15,24 @@ body{
     font-family: 'Montserrat';
     font-size: 1rem;
     background: #D6EAFF;
+    padding-top: 5em;
 
+}
+h1, h2, h3{
+    font-family: 'Kaushan script';
+    color: #333333;
+}
+
+.btn-dark{
+    background-color: #1C1C1E;
 }
 
 
+
 /* Nav */
+#mainNav{
+    background-color: #1C1C1E;
+}
 nav a, .nav-link{
     color: #fa6b05;
 }
@@ -33,20 +46,39 @@ nav a.active{
     font-size: 1.5em;
     font-family: 'Kaushan script';
 }
+.navToggler{
+    color: #fa6b05;
+}
 
 
 
 /* Header */
 header{
-    padding-top: 5em;
+    background-color: #1C1C1E;
 }
-h1, h2, h3{
-    font-family: 'Kaushan script';
-    color: #333333;
+.text-intro{
+    color: #D6EAFF;
 }
-.carouselBtn{
+.carousel-control{
+    text-decoration: none;
     color: #fa6b05;
-    font-weight: 2em;
+}
+
+#item{
+    background-color: lavender;
+    border: 1px solid black;
+    border-radius: 0.2em;
+}
+#item img{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    width:100%;
+    height:auto;
+    min-width: 100%;
+    min-height: 100%;
+    padding:0.5em;
 }
 
 /* Main */
