@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,12 +24,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 </head>
-<body class="container-fluid" id="top">
-
-
-<!-- header -->
-    <main class="container-fluid text-center row" >
-        <div class="container col-lg-7"id="carousel" >
+<body class="container-fluid">
+    <main class="container-fluid text-center row align-items-center h-100">
+        <div class="container col-lg-8" id="carousel" >
             <div class="carousel slide carousel-fade" id="carouselExemple" data-ride="carousel" data-interval="3000">
                 <div class="carousel-inner w-100 mx-auto border border-dark rounded-3">
                     <div class="carousel-item active">
@@ -45,9 +42,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-5 row">
+        <div class="col-lg-4 h-75 d-flex flex-column">
             <!-- Dropdown Menu -->
-            <div class="navbar bg-transparent align-items-start" id="mainNav">
+            <div class="bg-transparent" id="mainNav">
                 <div class="container">
                     <button class="navbar-toggler btn btn-dark mx-auto" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navToggler">Menu</span>
@@ -70,8 +67,19 @@
                     </div>
                 </div>
             </div>
+            <!-- !# dropdown ne marche pas -->
+            <!-- <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropup
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                </ul>
+              </div> -->
             <!-- Titre -->
-            <div class="mx-auto mt-auto justify-content-center align-items-end">
+            <div class="mt-auto justify-content-center">
                 <h2 class="display-4">Welcome to</h2>
                 <h1 class="display-2">Pilou Art-Gallery</h1>
                 <button class="btn btn-dark mt-5">

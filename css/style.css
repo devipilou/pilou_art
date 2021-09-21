@@ -15,7 +15,7 @@ body{
     font-family: 'Montserrat';
     font-size: 1rem;
     background: #D6EAFF;
-    padding-top: 5em;
+
 
 }
 h1, h2, h3{
@@ -25,6 +25,15 @@ h1, h2, h3{
 
 .btn-dark{
     background-color: #1C1C1E;
+}
+#top{
+    padding-top: 5em;
+}
+.orange{
+    color: #fa6b05;
+}
+.erieblue{
+    color: #D6EAFF;
 }
 
 
@@ -56,17 +65,15 @@ nav a.active{
 header{
     background-color: #1C1C1E;
 }
-.text-intro{
-    color: #D6EAFF;
-}
+
 .carousel-control{
     text-decoration: none;
-    color: #fa6b05;
+    color: black;
 }
 
 #item{
-    background-color: lavender;
-    border: 1px solid black;
+    background-color: #333333;
+    border: 1px solid #fa6b05;
     border-radius: 0.2em;
 }
 #item img{
@@ -81,5 +88,10 @@ header{
     padding:0.5em;
 }
 
+
+
 /* Main */
+main{
+    height: auto;
+}
 /* Footer */

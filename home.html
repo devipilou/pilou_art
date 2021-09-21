@@ -56,8 +56,9 @@
     </nav>
  
 <!-- header -->
-    <header class="container-fluid text-center row m-1 p-2 rounded-3">
-        <div class="container col-lg"id="carousel" >
+    <header class="container-fluid text-center row m-1 p-1 rounded-3">
+        <!-- Carousel 3 images -->
+        <div class="container col-lg m-1"id="carousel" >
             <div class="carousel slide carousel-fade" id="carouselExemple" data-ride="carousel" data-interval="3000">
                 <div class="carousel-inner w-100 mx-auto border border-dark rounded-3">
                     <div class="carousel-item active">
@@ -77,6 +78,7 @@
                         <span class="visually-hidden">Suivant</span>
                         <span class="fas fa-3x fa-chevron-circle-right carousel-control" aria-hidden="true"></span>
                     </a>
+                    <!-- !# ne s'affiche pas-->
                     <ol class="carousel-indicators">
                         <li class="active" data-target="#carouselExemple" data-slide-to="0"></li>
                         <li data-target="#carouselExemple" data-slide-to="1"></li>
@@ -85,26 +87,30 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg m-auto text-intro">
-            <h2 class="display-4">Welcome to</h2>
-            <h1 class="display-2">Pilou Art-Gallery</h1>
-            <article class="container mt-3 text-center" id="mini-gallery">
-                <p>In this gallery, you will find as much drawings as i'm able to share</p>
-                <section class="row">
-                    <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test01.jpg" alt="Jeu"></div>
-                    <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test02.jpg" alt="Jeu"></div>
-                    <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test03.jpg" alt="Jeu"></div>
-                    <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test04.jpg" alt="Jeu"></div>
-                    <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test05.jpg" alt="Jeu"></div>
-                    <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test06.jpg" alt="Jeu"></div>
-                    <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test07.jpg" alt="Jeu"></div>
-                    <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test08.jpg" alt="Jeu"></div>
-                    <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test09.jpg" alt="Jeu"></div>
-                    <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test10.jpg" alt="Jeu"></div>
-                    <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test11.jpg" alt="Jeu"></div>
-                    <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test12.jpg" alt="Jeu"></div>
-                </section>
-            </article>
+        <!-- Titre accueil et gallerie -->
+        <div class="col-lg rounded-3 row m-1 align-items-center">
+            <div class="text-intro">
+                <h2 class="display-4 erieblue">Welcome to</h2>
+                <h1 class="display-2 orange">Pilou Art-Gallery</h1>
+                <article class="container mt-3 text-center" id="mini-gallery">
+                    <p class="erieblue">In this gallery, you will find as much drawings as i'm able to share</p>
+                    <!-- Galerie -->
+                    <section class="row">
+                        <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\MindmapWeb.jpg" alt="Jeu"></div>
+                        <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\ThornsWeb.jpg" alt="Jeu"></div>
+                        <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\IntoTheUnknownWeb.jpg" alt="Jeu"></div>
+                        <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\ThreeWeb.jpg" alt="Jeu"></div>
+                        <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test05.jpg" alt="Jeu"></div>
+                        <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test06.jpg" alt="Jeu"></div>
+                        <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test07.jpg" alt="Jeu"></div>
+                        <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test08.jpg" alt="Jeu"></div>
+                        <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test09.jpg" alt="Jeu"></div>
+                        <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test10.jpg" alt="Jeu"></div>
+                        <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test11.jpg" alt="Jeu"></div>
+                        <div class="col-4 col-sm-3 col-md-2" id="item"><img src="img\test12.jpg" alt="Jeu"></div>
+                    </section>
+                </article>
+            </div>
         </div>
 
     </header>
