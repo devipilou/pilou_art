@@ -1,0 +1,35 @@
+//Création par Pilou le 24/09/21
+
+@import 'nav';
+@import 'header';
+@import 'main';
+@import 'footer';
+
+body{
+    font-family: $font2;
+    color: $black;
+    position: relative;
+    min-height: 100vh;
+    background: $blue;
+    font-size: 1rem;
+}
+
+
+//Page d'accueil
+
+.accueil{
+    @extend %flex-2centers;
+}
+.message-accueil {
+
+    font-family: $font1;
+    height: 100%;
+    h1{
+        font-size:5em;
+    }
+    h2{
+        font-size: 2em;
+    }
+}
+
+

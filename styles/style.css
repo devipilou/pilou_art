@@ -1,0 +1,36 @@
+.accueil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  background: #3D3D3D;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  color: #1E1E1F;
+  position: relative;
+  min-height: 100vh;
+  background: #D8EBFF;
+  font-size: 1rem;
+}
+
+.message-accueil {
+  font-family: "Kaushan Script", cursive;
+  height: 100%;
+}
+.message-accueil h1 {
+  font-size: 5em;
+}
+.message-accueil h2 {
+  font-size: 2em;
+}
+
+/*# sourceMappingURL=style.css.map */
