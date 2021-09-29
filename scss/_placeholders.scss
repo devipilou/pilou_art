@@ -5,3 +5,16 @@
     justify-content: center;
     align-items: center;
 }
+
+%button-blue{
+    border: 1px solid $dark;
+    border-radius: 1em;
+    background-color: $blue;
+    box-shadow: 10px 10px 20px $dark;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        background: linear-gradient(170deg, $light 0%, $blue 70%);
+        box-shadow: 20px 20px 60px $dark;
+    }
+    
+}

@@ -1,7 +1,19 @@
-.accueil {
+.bg-accueil {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.message-accueil {
+  border: 1px solid #3D3D3D;
+  border-radius: 1em;
+  background-color: #D8EBFF;
+  box-shadow: 10px 10px 20px #3D3D3D;
+  transition: 0.3s ease-in-out;
+}
+.message-accueil:hover {
+  background: linear-gradient(170deg, #F5F5F5 0%, #D8EBFF 70%);
+  box-shadow: 20px 20px 60px #3D3D3D;
 }
 
 nav {
@@ -18,22 +30,68 @@ body {
   color: #1E1E1F;
   position: relative;
   min-height: 100vh;
-  background: #D8EBFF;
+  background-color: #D8EBFF;
   font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+.separator {
+  width: 40%;
+  height: 1px;
+  background-color: #3D3D3D;
+}
+
+.bg-accueil {
+  background: url("/img/MindmapWeb.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  min-width: 320px;
+}
+
 .message-accueil {
-  display: block;
-  border: 1px solid black;
-  background-color: red;
   font-family: "Kaushan Script", cursive;
-  height: 100%;
+  width: auto;
+  height: auto;
+  padding: 15px 30px;
+  color: #3D3D3D;
 }
 .message-accueil h1 {
-  font-size: 5em;
+  font-size: 2em;
 }
 .message-accueil h2 {
-  font-size: 2em;
+  font-size: 1em;
+}
+.message-accueil p {
+  font-size: 0.7em;
+  color: #FA6B05;
+}
+
+@media only screen and (min-width: 768px) {
+  .message-accueil h1 {
+    font-size: 4em;
+  }
+  .message-accueil h2 {
+    font-size: 2em;
+  }
+  .message-accueil p {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .message-accueil h1 {
+    font-size: 6em;
+  }
+  .message-accueil h2 {
+    font-size: 3em;
+  }
+  .message-accueil p {
+    font-size: 1.2em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
