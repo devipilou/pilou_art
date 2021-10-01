@@ -6,15 +6,28 @@
     align-items: center;
 }
 
-%button-blue{
+%button-erieblue{
     border: 1px solid $dark;
     border-radius: 1em;
-    background-color: $blue;
-    box-shadow: 10px 10px 20px $dark;
-    transition: 0.3s ease-in-out;
+    background-color: $erieblue;
+    background: linear-gradient(175deg, $light 0%, $erieblue 50%);
+    box-shadow: 0.5em 0.5em 1em $dark;
+    color: $dark;
+    transition: 0.2s ease-in-out;
     &:hover{
-        background: linear-gradient(170deg, $light 0%, $blue 70%);
-        box-shadow: 20px 20px 60px $dark;
+        background: linear-gradient(175deg, $light 0%, $salmon 100%);
+        box-shadow: 1em 1em 2em $dark;
+        cursor: pointer;
+        p{
+            color: $blue;
+        }
+        hr{
+            background-color: $blue;
+        }
+    }
+    &:active{
+        background: linear-gradient(175deg, $gray 0%, $orange 100%);
+        box-shadow: 0 0 0 white;
     }
     
 }

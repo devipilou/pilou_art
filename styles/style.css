@@ -1,47 +1,169 @@
-.bg-accueil {
+.bg-accueil, .navigationIcon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.message-accueil {
+.message-accueil, .navigationIcon {
   border: 1px solid #3D3D3D;
   border-radius: 1em;
   background-color: #D8EBFF;
-  box-shadow: 10px 10px 20px #3D3D3D;
-  transition: 0.3s ease-in-out;
+  background: linear-gradient(175deg, #F5F5F5 0%, #D8EBFF 50%);
+  box-shadow: 0.5em 0.5em 1em #3D3D3D;
+  color: #3D3D3D;
+  transition: 0.2s ease-in-out;
 }
-.message-accueil:hover {
-  background: linear-gradient(170deg, #F5F5F5 0%, #D8EBFF 70%);
-  box-shadow: 20px 20px 60px #3D3D3D;
+.message-accueil:hover, .navigationIcon:hover {
+  background: linear-gradient(175deg, #F5F5F5 0%, #FFC396 100%);
+  box-shadow: 1em 1em 2em #3D3D3D;
+  cursor: pointer;
+}
+.message-accueil:hover p, .navigationIcon:hover p {
+  color: #5CABFF;
+}
+.message-accueil:hover hr, .navigationIcon:hover hr {
+  background-color: #5CABFF;
+}
+.message-accueil:active, .navigationIcon:active {
+  background: linear-gradient(175deg, #CCCCCC 0%, #FA6B05 100%);
+  box-shadow: 0 0 0 white;
 }
 
-nav {
-  background: #3D3D3D;
+.navigation {
   width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  height: 100vh;
+  position: relative;
 }
 
+.navigationIcon {
+  z-index: 1000;
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  width: 5em;
+  height: 5em;
+  flex-direction: column;
+}
+
+.barre {
+  width: 60%;
+  height: 5px;
+  background-color: #3D3D3D;
+  border-radius: 9999px;
+}
+
+.b1 {
+  position: relative;
+  top: -10px;
+  transition: all 0.2s;
+}
+
+.b2 {
+  transition: all 0.2s;
+}
+
+.b3 {
+  position: relative;
+  top: 10px;
+  transition: all 0.2s;
+}
+
+.containerMenu {
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+  position: absolute;
+  left: 0;
+  top: -100%;
+}
+
+.menu {
+  display: grid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  grid-template: repeat(4, 110px)/400px;
+}
+
+.menuItem {
+  justify-self: center;
+  align-self: center;
+}
+.menuItem span {
+  display: inline-block;
+}
+
+.item {
+  font-size: 2em;
+  font-family: "Kaushan Script", cursive;
+}
+
+.label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  font-size: 1.8em;
+  line-height: 1.4;
+  overflow: hidden;
+  text-align: center;
+  color: transparent;
+  transition: all 0.3s;
+}
+
+.menuItem:hover .label {
+  color: #5CABFF;
+}
+
+@media screen and (min-width: 768px) {
+  .navigationIcon {
+    right: 3em;
+    width: 6em;
+    height: 6em;
+  }
+
+  .item {
+    font-size: 2.5em;
+  }
+
+  .label {
+    font-size: 2.2em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigationIcon {
+    top: 3em;
+    right: 6em;
+  }
+
+  .item {
+    font-size: 3em;
+  }
+
+  .label {
+    font-size: 2.5em;
+  }
+}
 body {
   font-family: "Oswald", sans-serif;
   color: #1E1E1F;
   position: relative;
+  width: 100%;
   min-height: 100vh;
   background-color: #D8EBFF;
   font-size: 1rem;
 }
 
 a {
+  color: #FA6B05;
   text-decoration: none;
 }
 
 .separator {
   width: 40%;
   height: 1px;
-  background-color: #3D3D3D;
+  background-color: #FA6B05;
 }
 
 .bg-accueil {
@@ -58,7 +180,6 @@ a {
   width: auto;
   height: auto;
   padding: 15px 30px;
-  color: #3D3D3D;
 }
 .message-accueil h1 {
   font-size: 2em;

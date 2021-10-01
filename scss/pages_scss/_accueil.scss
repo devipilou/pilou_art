@@ -9,17 +9,19 @@ body{
     font-family: $font2;
     color: $black;
     position: relative;
+    width: 100%;
     min-height: 100vh;
-    background-color: $blue;
+    background-color: $erieblue;
     font-size: 1rem;
 }
 a{
+    color:$orange;
     text-decoration: none;
 }
 .separator{
     width:40%;
     height: 1px;
-    background-color: $dark;
+    background-color: $orange;
 }
 
 
@@ -39,8 +41,7 @@ a{
     width:auto;
     height: auto;
     padding: 15px 30px;
-    color: $dark;
-    @extend %button-blue;
+    @extend %button-erieblue;
     h1{
         font-size:2em;
     }

@@ -1,11 +1,116 @@
 //Création par Pilou le 24/09/21
+// Maj par Pilou le 01/10/2021
 
 
-nav {
-    background: $dark;
+.navigation{
     width: 100%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 100vh;
+    position: relative;
+}
+
+// Bouton hamburger
+.navigationIcon{
+    z-index: 1000;
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    @extend %button-erieblue;
+    width: 5em;
+    height: 5em;
+    @extend %flex-2centers;
+    flex-direction: column;
+}
+.barre{
+    width: 60%;
+    height: 5px;
+    background-color: $dark;
+    border-radius: 9999px;
+}
+.b1{
+    position: relative;
+    top: -10px;
+    transition: all 0.2s;
+}
+.b2{
+    transition: all 0.2s;
+}
+.b3{
+    position: relative;
+    top: 10px;
+    transition: all 0.2s;
+}
+
+// Menu
+.containerMenu{
+    z-index: 900;
+    width: 100%;
+    height: 100%;
+    background-color: $light;
+    position: absolute;
+    left: 0;
+    top: -100%;
+}
+.menu{
+    display: grid;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    grid-template: repeat(4, 110px) / 400px;
+}
+.menuItem{
+    justify-self: center;
+    align-self: center;
+    span{
+        display: inline-block;
+    }
+}
+.item{
+    font-size: 2em;
+    font-family: $font1;
+}
+.label{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    font-size: 1.8em;
+    line-height: 1.4;
+    overflow: hidden;
+    text-align: center;
+    color: transparent;
+    transition: all 0.3s;
+}
+.menuItem:hover .label{
+    color: $blue;
+}
+
+
+
+@media screen and (min-width: $tablet){
+    .navigationIcon{
+        right: 3em;
+        width: 6em;
+        height: 6em;
+    }
+    .item{
+        font-size: 2.5em;
+    }
+    .label{
+        font-size: 2.2em;
+    }
+
+}
+
+@media screen and (min-width: $desktop){
+    .navigationIcon{
+        top: 3em;
+        right: 6em;
+    }
+    .item{
+        font-size: 3em;
+    }
+    .label{
+        font-size: 2.5em;
+    }
+
 }
