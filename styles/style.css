@@ -112,10 +112,6 @@
   transition: all 0.3s;
 }
 
-.menuItem:hover .label {
-  color: #5CABFF;
-}
-
 @media screen and (min-width: 768px) {
   .navigationIcon {
     right: 3em;
