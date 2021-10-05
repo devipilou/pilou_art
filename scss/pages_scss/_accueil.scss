@@ -15,6 +15,14 @@ body{
     font-size: 1rem;
     position: relative;
 }
+h1, h2, h3{
+    font-family: $font1;
+    color: $dark;
+}
+
+p{
+    margin-bottom: 1em;
+}
 a{
     color:$orange;
     text-decoration: none;
@@ -26,7 +34,7 @@ a{
 }
 
 
-//Page d'accueil
+//Page d'accueil-----------------------------------------------
 
 .bg-accueil{
     background: url("/img/MindmapWeb.jpg");

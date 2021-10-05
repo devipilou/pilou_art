@@ -104,7 +104,6 @@ div#slider figure img {
 }
 .welcome-title-big{
     font-size: 3em;
-    color: $dark;
 }
 
 .welcome-gallery{
@@ -155,11 +154,8 @@ div#slider figure img {
     .welcome{
         height:100%;
         justify-content: space-around;
+    }
 
-    }
-    .welcome-title-small{
-        font-size: 4em;
-    }
     .welcome-title-big{
         font-size: 5em;
     }
