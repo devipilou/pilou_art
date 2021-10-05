@@ -149,7 +149,7 @@ header {
   height: auto;
   display: flex;
   flex-direction: column;
-  background-color: #3D3D3D;
+  padding: 0 auto;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -162,6 +162,7 @@ header {
   width: 100%;
   height: auto;
   padding: 1em;
+  background-color: #3D3D3D;
 }
 
 @keyframes slidy {
@@ -196,6 +197,7 @@ header {
 div#slider {
   width: 100%;
   overflow: hidden;
+  border-radius: 1em;
 }
 
 div#slider figure {
@@ -214,10 +216,20 @@ div#slider figure img {
   float: left;
 }
 
+@media only screen and (min-width: 1200px) {
+  .header-left {
+    height: 70vh;
+  }
+
+  div#slider figure img {
+    max-height: 70vh;
+  }
+}
 .header-right {
   width: 100%;
   height: auto;
   padding: 1em;
+  background-color: #3D3D3D;
 }
 
 .welcome {
@@ -235,11 +247,13 @@ div#slider figure img {
   margin: 1em;
   font-family: "Kaushan Script", cursive;
 }
-.welcome-title .welcome-title-small {
+
+.welcome-title-small {
   font-size: 2em;
   color: #FA6B05;
 }
-.welcome-title .welcome-title-big {
+
+.welcome-title-big {
   font-size: 3em;
   color: #3D3D3D;
 }
@@ -247,11 +261,71 @@ div#slider figure img {
 .welcome-gallery {
   width: 100%;
 }
-.welcome-gallery .mini-gallery .mini-gallery-img {
-  width: 15px;
-  height: auto;
+
+.welcome-gallery-text {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
 }
 
+.mini-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1em;
+  padding: 0.1em;
+}
+
+.mini-gallery-frame {
+  width: 45%;
+  height: auto;
+  background-color: #3D3D3D;
+  border: 1px solid #FA6B05;
+  padding: 0.3em 0;
+}
+.mini-gallery-frame img {
+  width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  .welcome-title-small {
+    font-size: 3em;
+  }
+
+  .welcome-title-big {
+    font-size: 4em;
+  }
+
+  .mini-gallery-frame {
+    width: 30%;
+  }
+
+  .welcome-gallery-text {
+    font-size: 1.8em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header-right {
+    height: 70vh;
+  }
+
+  .welcome {
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  .welcome-title-small {
+    font-size: 4em;
+  }
+
+  .welcome-title-big {
+    font-size: 5em;
+  }
+
+  .mini-gallery-frame {
+    width: 15%;
+  }
+}
 body {
   font-family: "Oswald", sans-serif;
   color: #1E1E1F;
