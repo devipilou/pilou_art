@@ -1,10 +1,10 @@
 //Création par Pilou le 24/09/21
-// Maj par Pilou le 01/10/2021
+// Maj par Pilou le 05/10/2021
 
 
 
 
-// Bouton hamburger
+// Bouton hamburger-----------------------------------------------
 .navigationIcon{
     z-index: 1000;
     position: fixed;
@@ -26,6 +26,7 @@
     position: relative;
     top: -10px;
     transition: all 0.2s;
+    
 }
 .b2{
     transition: all 0.2s;
@@ -36,32 +37,41 @@
     transition: all 0.2s;
 }
 
-// Menu
+// Menu-----------------------------------------------
 .containerMenu{
     z-index: 900;
-    width: 100%;
-    height: 100%;
-    background-color: $light;
+    width: auto;
+    height: auto;
+    min-width: 50%;
+    border: 1px solid $dark;
+    background: linear-gradient(175deg, $light 0%, $erieblue 50%);
+    box-shadow: 0.5em 0.5em 1em $dark;
+    border-radius: 1em;
     position: absolute;
-    left: 0;
+    left: 50%;
     top: -100%;
+    transform: translate(-50%,0%);
 }
 .menu{
-    display: grid;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    grid-template: repeat(4, 110px) / 400px;
+    display: flex;
+    flex-direction: column;
+    @extend %flex-2centers;
 }
 .menuItem{
-    justify-self: center;
-    align-self: center;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    // border: 1px solid $gray;
+    border-radius: 1em;
+    margin: 2em;
+    padding:0.5em;
     span{
         display: inline-block;
     }
 }
 .item{
+    left: 0;
+    width: auto;
     font-size: 2em;
     font-family: $font1;
 }
@@ -72,7 +82,6 @@
     font-size: 1.8em;
     line-height: 1.4;
     overflow: hidden;
-    text-align: center;
     color: transparent;
     transition: all 0.3s;
 }

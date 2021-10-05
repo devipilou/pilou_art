@@ -1,1 +1,103 @@
-//Création par Pilou le 24/09/21
+//Création par Pilou le 05/10/21
+
+header{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $dark;
+}
+
+@media only screen and (min-width : $tablet) {
+
+}
+@media only screen and (min-width : $desktop) {
+    header{
+        flex-direction: row;
+        max-height: 75vh;
+    }
+
+}
+
+
+//Carousel-----------------------------------------------
+
+.header-left{
+    width: 100%;
+    height:auto;
+    padding: 1em;
+
+}
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+
+div#slider { 
+    width: 100%;
+    overflow: hidden;
+
+}
+div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0 auto;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite;
+}
+div#slider figure img {
+    width: 20%; 
+    height: auto;
+    float: left; }
+
+//Message-----------------------------------------------
+
+.header-right{
+    width: 100%;
+    height:auto;
+    padding: 1em;
+}
+
+.welcome{
+    width: 100%;
+    background-color: $erieblue;
+    border: 1px solid $black;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welcome-title{
+    width: 100%;
+    margin:1em;
+    font-family: $font1;
+    
+    .welcome-title-small{
+        font-size: 2em;
+        color: $orange;
+    }
+    .welcome-title-big{
+        font-size: 3em;
+        color: $dark;
+    }
+}
+.welcome-gallery{
+    width:100%;
+    .mini-gallery{ 
+        .mini-gallery-img{
+            width: 15px;
+            height: auto;
+        }
+    }
+
+}
