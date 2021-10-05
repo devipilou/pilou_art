@@ -19,35 +19,66 @@
 </head>
 
 <body class="container-fluid" id="top">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
-        <div class="container">
-            
-            <a href="index.html" class="navbar-brand">
-                <img src="img\ThornsWeb.jpg" alt="Logo-Art-By-Pilou" height="50">
-                Art by Pilou
-            </a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="fa fa-bars navToggler"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mr-1">
-                        <a href="home.html#top" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item mr-1">
-                        <a href="gallery.html#top" class="nav-link">Gallery</a>
-                    </li>
-                    <li class="nav-item mr-1">
-                        <a href="about.html#top" class="nav-link active">About Me</a>
-                    </li>
-                    <li class="nav-item mr-1">
-                        <a href="contact.html#top" class="nav-link">Contact</a>
-                    </li>
-                </ul>
+    <!-- Navigation -->
+    <div class="navigation">
+        <div class="navigationIcon">
+            <div class="barre b1"></div>
+            <div class="barre b2"></div>
+            <div class="barre b3"></div>
+        </div>
+        <div class="containerMenu">
+            <div class="menu">
+                <a href="/pages/home.html" class="menuItem">
+                    <span class="item" aria-label="Home">
+                        <span class="char1" aria-hidden="true">H</span>
+                        <span class="char2" aria-hidden="true">o</span>
+                        <span class="char3" aria-hidden="true">m</span>
+                        <span class="char4" aria-hidden="true">e</span>
+                    </span>
+                    <span class="label">Enter my world</span>
+                </a>
+                <a href="/pages/gallery.html" class="menuItem">
+                    <span class="item" aria-label="Gallery">
+                        <span class="char1" aria-hidden="true">G</span>
+                        <span class="char2" aria-hidden="true">a</span>
+                        <span class="char3" aria-hidden="true">l</span>
+                        <span class="char4" aria-hidden="true">l</span>
+                        <span class="char5" aria-hidden="true">e</span>
+                        <span class="char6" aria-hidden="true">r</span>
+                        <span class="char7" aria-hidden="true">y</span>
+                    </span>
+                    <span class="label">Art by Pilou</span>
+                </a>
+                <a href="/pages/about.html" class="menuItem">
+                    <span class="item" aria-label="About Me">
+                        <span class="char1" aria-hidden="true">A</span>
+                        <span class="char2" aria-hidden="true">b</span>
+                        <span class="char3" aria-hidden="true">o</span>
+                        <span class="char4" aria-hidden="true">u</span>
+                        <span class="char5" aria-hidden="true">t</span>
+                        <span class="char6" aria-hidden="true"></span>
+                        <span class="char7" aria-hidden="true">M</span>
+                        <span class="char8" aria-hidden="true">e</span>
+                    </span>
+                    <span class="label">Learn more about Pilou</span>
+                </a>
+                <a href="/pages/contact.html" class="menuItem">
+                    <span class="item" aria-label="Contact">
+                        <span class="char1" aria-hidden="true">C</span>
+                        <span class="char2" aria-hidden="true">o</span>
+                        <span class="char3" aria-hidden="true">n</span>
+                        <span class="char4" aria-hidden="true">t</span>
+                        <span class="char5" aria-hidden="true">a</span>
+                        <span class="char6" aria-hidden="true">c</span>
+                        <span class="char7" aria-hidden="true">t</span>
+                    </span>
+                    <span class="label">Reach to me</span>
+                </a>
             </div>
         </div>
-    </nav>
+    </div>
+
+
     
 
     <main>
@@ -63,9 +94,7 @@
 
 
     
-<script>
-// generer une date
-$('#year').text(new Date().getFullYear());
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="../app.js"></script>
 </body>
 </html>
