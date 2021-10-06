@@ -24,7 +24,7 @@
   background-color: #5CABFF;
 }
 .message-accueil:active, .navigationIcon:active {
-  background: linear-gradient(175deg, #CCCCCC 0%, #FA6B05 100%);
+  background: linear-gradient(175deg, #F5F5F5 0%, #FA6B05 100%);
   box-shadow: 0 0 0 white;
 }
 
@@ -70,7 +70,7 @@
   background: linear-gradient(175deg, #F5F5F5 0%, #D8EBFF 50%);
   box-shadow: 0.5em 0.5em 1em #3D3D3D;
   border-radius: 1em;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: -100%;
   transform: translate(-50%, 0%);
@@ -378,6 +378,19 @@ footer h5 {
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
+  .footer-column {
+    width: 45%;
+  }
+
+  .footer-column:nth-child(1) {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer-column, .footer-column:nth-child(1) {
+    width: 30%;
+  }
 }
 body {
   font-family: "Oswald", sans-serif;
@@ -411,7 +424,7 @@ a {
 }
 
 .bg-accueil {
-  background: url("/img/MindmapWeb.jpg");
+  background: url("../img/MindmapWeb.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -425,36 +438,36 @@ a {
   height: auto;
   padding: 15px 30px;
 }
-.message-accueil h1 {
+.message-accueil .index-big-title {
   font-size: 2em;
 }
-.message-accueil h2 {
+.message-accueil .index-small-title {
   font-size: 1em;
 }
-.message-accueil p {
+.message-accueil .index-enter-text {
   font-size: 0.7em;
   color: #FA6B05;
 }
 
 @media only screen and (min-width: 768px) {
-  .message-accueil h1 {
+  .message-accueil .index-big-title {
     font-size: 4em;
   }
-  .message-accueil h2 {
+  .message-accueil .index-small-title {
     font-size: 2em;
   }
-  .message-accueil p {
+  .message-accueil .index-enter-text {
     font-size: 1em;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .message-accueil h1 {
+  .message-accueil .index-big-title {
     font-size: 6em;
   }
-  .message-accueil h2 {
+  .message-accueil .index-small-title {
     font-size: 3em;
   }
-  .message-accueil p {
+  .message-accueil .index-enter-text {
     font-size: 1.2em;
   }
 }

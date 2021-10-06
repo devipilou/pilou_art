@@ -37,7 +37,7 @@ a{
 //Page d'accueil-----------------------------------------------
 
 .bg-accueil{
-    background: url("/img/MindmapWeb.jpg");
+    background: url("../img/MindmapWeb.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -51,13 +51,13 @@ a{
     height: auto;
     padding: 15px 30px;
     @extend %button-erieblue;
-    h1{
+    .index-big-title{
         font-size:2em;
     }
-    h2{
+    .index-small-title{
         font-size: 1em;
     }
-    p{
+    .index-enter-text{
         font-size: 0.7em;
         color: $orange;
     }
@@ -66,26 +66,26 @@ a{
 @media only screen and (min-width : $tablet) {
 
     .message-accueil {
-        h1{
+        .index-big-title{
             font-size:4em;
         }
-        h2{
+        .index-small-title{
             font-size: 2em;
         }
-        p{
+        .index-enter-text{
             font-size: 1em;
         }
     }
 }
 @media only screen and (min-width : $desktop) {
     .message-accueil {
-        h1{
+        .index-big-title{
             font-size:6em;
         }
-        h2{
+        .index-small-title{
             font-size: 3em;
         }
-        p{
+        .index-enter-text{
             font-size: 1.2em;
         }
     }

@@ -14,7 +14,7 @@ btnNav.addEventListener('click', () => {
         TweenMax.to(b2, 0.01, {display: 'none'});
         TweenMax.to(b1, 0.2, {top:2.5, rotation: '135deg'});
         TweenMax.to(b3, 0.2, {top:-2.5, rotation: '-135deg'});
-        TweenMax.to(containerMenu, 0.8, {top : "50%",transform: "translate(-50%,-50%)" , ease: Power2.easeOut})
+        TweenMax.to(containerMenu, 0.8, {top : '50vh',transform: "translate(-50%,-50%)" , ease: Power2.easeOut})
     }else{
         toggle--;
         TweenMax.to(b2, 0.01, {delay:0.25, display: 'block'});

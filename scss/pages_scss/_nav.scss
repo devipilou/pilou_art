@@ -47,7 +47,7 @@
     background: linear-gradient(175deg, $light 0%, $erieblue 50%);
     box-shadow: 0.5em 0.5em 1em $dark;
     border-radius: 1em;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: -100%;
     transform: translate(-50%,0%);
@@ -89,8 +89,6 @@
     color: $blue;
 }
 
-
-
 @media screen and (min-width: $tablet){
     .navigationIcon{
         right: 3em;
@@ -103,7 +101,6 @@
     .label{
         font-size: 2.2em;
     }
-
 }
 
 @media screen and (min-width: $desktop){
@@ -117,5 +114,4 @@
     .label{
         font-size: 2.5em;
     }
-
 }

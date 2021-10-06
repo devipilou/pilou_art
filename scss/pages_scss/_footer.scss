@@ -26,8 +26,17 @@ footer{
         justify-content: space-around;
         flex-wrap: wrap;
     }
+    .footer-column{
+        width: 45%;
+    }
+    .footer-column:nth-child(1){
+        width:100%;
+    }
 
 }
 @media only screen and (min-width : $desktop) {
+    .footer-column, .footer-column:nth-child(1){
+        width:30%;
+    }
 
 }
