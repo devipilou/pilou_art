@@ -52,15 +52,18 @@ a{
     height: auto;
     padding: 15px 30px;
     @extend %button-erieblue;
+    p{
+        color: $orange;
+    }
     .index-big-title{
         font-size:2em;
     }
     .index-small-title{
         font-size: 1em;
+        margin-bottom: 0;
     }
     .index-enter-text{
         font-size: 0.7em;
-        color: $orange;
     }
 }
 

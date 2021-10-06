@@ -95,16 +95,17 @@ div#slider figure img {
 
 .welcome-title{
     width: 100%;
-    margin:1em;
+    margin:1em auto;
     font-family: $font1;
     
 }
 .welcome-title-small{
-    font-size: 2em;
+    font-size: 1.5em;
     color: $orange;
+    margin-bottom: 0;
 }
 .welcome-title-big{
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .welcome-gallery{
@@ -112,7 +113,7 @@ div#slider figure img {
 }
 .welcome-gallery-text{
     font-size: 1.2em;
-    margin-bottom: 0.5em;
+    margin: 0.5em;
 }
 
 .mini-gallery{
@@ -161,7 +162,7 @@ div#slider figure img {
         font-size: 5em;
     }
     .mini-gallery-frame{
-        width: 15%;
+        width: 16%;
     }
 
 }

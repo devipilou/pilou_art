@@ -250,17 +250,18 @@ div#slider figure img {
 
 .welcome-title {
   width: 100%;
-  margin: 1em;
+  margin: 1em auto;
   font-family: "Kaushan Script", cursive;
 }
 
 .welcome-title-small {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #FA6B05;
+  margin-bottom: 0;
 }
 
 .welcome-title-big {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .welcome-gallery {
@@ -269,7 +270,7 @@ div#slider figure img {
 
 .welcome-gallery-text {
   font-size: 1.2em;
-  margin-bottom: 0.5em;
+  margin: 0.5em;
 }
 
 .mini-gallery {
@@ -324,7 +325,7 @@ div#slider figure img {
   }
 
   .mini-gallery-frame {
-    width: 15%;
+    width: 16%;
   }
 }
 main {
@@ -337,15 +338,15 @@ main h1, main h2, main h3 {
 }
 
 h1 {
-  font-size: 3.5em;
-}
-
-h2 {
   font-size: 3em;
 }
 
-h3 {
+h2 {
   font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
 }
 
 h4 {
@@ -361,7 +362,7 @@ section {
 footer {
   width: 100%;
   padding: 0.5em;
-  background: #CCCCCC 50%;
+  background: #CCCCCC;
   border-top: 1px dashed #3D3D3D;
   display: flex;
   flex-direction: column;
@@ -448,15 +449,18 @@ a {
   height: auto;
   padding: 15px 30px;
 }
+.message-accueil p {
+  color: #FA6B05;
+}
 .message-accueil .index-big-title {
   font-size: 2em;
 }
 .message-accueil .index-small-title {
   font-size: 1em;
+  margin-bottom: 0;
 }
 .message-accueil .index-enter-text {
   font-size: 0.7em;
-  color: #FA6B05;
 }
 
 @media only screen and (min-width: 768px) {
