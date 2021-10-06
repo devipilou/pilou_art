@@ -150,6 +150,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 0 auto;
+  background-color: #3D3D3D;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -162,7 +163,6 @@ header {
   width: 100%;
   height: auto;
   padding: 1em;
-  background-color: #3D3D3D;
 }
 
 @keyframes slidy {
@@ -229,7 +229,6 @@ div#slider figure img {
   width: 100%;
   height: auto;
   padding: 1em;
-  background-color: #3D3D3D;
 }
 
 .welcome {
@@ -322,7 +321,7 @@ div#slider figure img {
   }
 }
 main {
-  margin: 1em 0;
+  padding: 1em 0;
   width: 100%;
   text-align: center;
 }
@@ -356,6 +355,7 @@ footer {
   background: #CCCCCC 50%;
   display: flex;
   flex-direction: column;
+  border-top: 1px dashed #3D3D3D;
 }
 footer h5 {
   font-size: 2em;
