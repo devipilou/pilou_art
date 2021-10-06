@@ -28,6 +28,10 @@
   box-shadow: 0 0 0 white;
 }
 
+nav {
+  width: 100%;
+}
+
 .navigationIcon {
   z-index: 1000;
   position: fixed;
@@ -196,8 +200,11 @@ header {
 }
 div#slider {
   width: 100%;
+  height: auto;
+  max-height: 100%;
   overflow: hidden;
   border-radius: 1em;
+  margin: auto 0;
 }
 
 div#slider figure {
@@ -321,8 +328,8 @@ div#slider figure img {
   }
 }
 main {
-  padding: 1em 0;
   width: 100%;
+  padding: 1em 0;
   text-align: center;
 }
 main h1, main h2, main h3 {
@@ -347,15 +354,17 @@ h4 {
 }
 
 section {
+  width: auto;
   margin: 1em;
 }
 
 footer {
   width: 100%;
+  padding: 0.5em;
   background: #CCCCCC 50%;
+  border-top: 1px dashed #3D3D3D;
   display: flex;
   flex-direction: column;
-  border-top: 1px dashed #3D3D3D;
 }
 footer h5 {
   font-size: 2em;
@@ -363,7 +372,7 @@ footer h5 {
 
 .footer-column {
   margin: 1em;
-  width: 100%;
+  width: auto;
   text-align: center;
 }
 .footer-column a {
@@ -396,7 +405,7 @@ body {
   font-family: "Oswald", sans-serif;
   color: #1E1E1F;
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-color: #D8EBFF;
   font-size: 1rem;
@@ -419,8 +428,9 @@ a {
 
 .separator {
   width: 40%;
-  height: 1px;
+  height: 2px;
   background-color: #FA6B05;
+  margin: 0 auto;
 }
 
 .bg-accueil {

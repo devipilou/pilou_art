@@ -42,8 +42,12 @@ header{
 
 div#slider { 
     width: 100%;
+    height: auto;
+    max-height: 100%;
     overflow: hidden;
-    border-radius: 1em;}
+    border-radius: 1em;
+    margin: auto 0;
+}
 div#slider figure { 
     position: relative;
     width: 500%;
@@ -77,8 +81,6 @@ div#slider figure img {
     width: 100%;
     height:auto;
     padding: 1em;
-    // background-color: $dark;
-
 }
 
 .welcome{
