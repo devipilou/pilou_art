@@ -9,6 +9,12 @@ header{
     background-color: $dark;
 }
 
+.enter-gallery{
+    padding: 0.5em 1em;
+    @extend %button-erieblue;
+    align-content: center;
+}
+
 @media only screen and (min-width : $tablet) {
 
 }

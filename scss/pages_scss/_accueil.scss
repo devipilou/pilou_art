@@ -4,6 +4,7 @@
 @import 'header';
 @import 'main';
 @import 'footer';
+@import 'gallery';
 
 body{
     font-family: $font2;
@@ -11,6 +12,7 @@ body{
     position: relative;
     width: 100%;
     min-height: 100vh;
+    min-width: 320px;
     background-color: $erieblue;
     font-size: 1rem;
     position: relative;

@@ -2,6 +2,7 @@
 footer{
     width: 100%;
     padding: 0.5em;;
+    height: 45vh;
     background: $gray;
     border-top: 1px dashed $dark;
     display: flex;
@@ -27,6 +28,8 @@ footer{
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
+        height: 30vh;
+
     }
     .footer-column{
         width: 45%;
@@ -37,6 +40,10 @@ footer{
 
 }
 @media only screen and (min-width : $desktop) {
+    footer{
+        height: 20vh;
+
+    }
     .footer-column, .footer-column:nth-child(1){
         width:30%;
     }
