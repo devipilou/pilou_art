@@ -12,14 +12,14 @@ btnNav.addEventListener('click', () => {
     if (toggle===0){
         toggle++;
         TweenMax.to(b2, 0.01, {display: 'none'});
-        TweenMax.to(b1, 0.2, {top:2.5, rotation: '135deg'});
-        TweenMax.to(b3, 0.2, {top:-2.5, rotation: '-135deg'});
+        TweenMax.to(b1, 0.2, {top:1.5, rotation: '135deg'});
+        TweenMax.to(b3, 0.2, {top:-1.5, rotation: '-135deg'});
         TweenMax.to(containerMenu, 0.8, {top : '50vh',transform: "translate(-50%,-50%)" , ease: Power2.easeOut})
     }else{
         toggle--;
         TweenMax.to(b2, 0.01, {delay:0.25, display: 'block'});
-        TweenMax.to(b1, 0.1, {top:-10, rotation: '0deg'});
-        TweenMax.to(b3, 0.1, {top:10, rotation: '0deg'});
+        TweenMax.to(b1, 0.1, {top:-6, rotation: '0deg'});
+        TweenMax.to(b3, 0.1, {top:6, rotation: '0deg'});
         TweenMax.to(containerMenu, 0.5, {top : "-100%",transform: "translate(-50%,0%)" , ease: Power2.easeIn})
     }
 })
@@ -60,8 +60,8 @@ menuItem.forEach(item => item.addEventListener('click', () => {
 
     toggle--;
     TweenMax.to(b2, 0.01, {delay:0.25, display: 'block'});
-    TweenMax.to(b1, 0.1, {top:-10, rotation: '0deg'});
-    TweenMax.to(b3, 0.1, {top:10, rotation: '0deg'});
+    TweenMax.to(b1, 0.1, {top:-6, rotation: '0deg'});
+    TweenMax.to(b3, 0.1, {top:6, rotation: '0deg'});
     TweenMax.to(containerMenu, 0.5, {top : "-100%",transform: "translate(-50%,0%)" , ease: Power2.easeIn});
 
 }))
