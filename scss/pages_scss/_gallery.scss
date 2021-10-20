@@ -33,9 +33,7 @@
 .case-lineart{
     @include case-button($salmon);
 }
-.case-inktober{
-    @include case-button($erieblue);
-}
+
 .case-other{
     @include case-button($salmon);
 }
