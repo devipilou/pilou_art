@@ -336,13 +336,14 @@ div#slider figure img {
   }
 }
 main {
-  width: 100%;
-  padding: 1em 0;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1em 0.2em;
   text-align: center;
-  background-color: #D8EBFF;
+  background-color: white;
 }
 main h1, main h2, main h3 {
-  margin-bottom: 0.5em;
+  margin: 1em 0;
 }
 
 h1 {
@@ -367,6 +368,18 @@ section {
   margin: 1em;
 }
 
+@media screen and (min-width: 768px) {
+  main {
+    width: 90%;
+    padding: 1em 0.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main {
+    width: 80%;
+    padding: 1em;
+  }
+}
 footer {
   width: 100%;
   padding: 0.5em;
@@ -509,6 +522,7 @@ body {
   min-width: 320px;
   font-size: 1rem;
   position: relative;
+  background-color: #D8EBFF;
 }
 
 h1, h2, h3 {
@@ -530,6 +544,16 @@ a {
   height: 2px;
   background-color: #FA6B05;
   margin: 0 auto;
+}
+
+strong {
+  font-size: 1.1em;
+  color: #5CABFF;
+}
+
+.hidden {
+  position: absolute;
+  top: -100%;
 }
 
 .bg-accueil {
