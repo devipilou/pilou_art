@@ -31,30 +31,33 @@ menuItem.forEach(item => item.addEventListener('mouseenter', (e) => {
     // console.log (lettreFromItem);
 
     for (i = 0; i < lettreFromItem.length; i++){
-        TweenMax.to(lettreFromItem[i],1,{
-            x: Math.floor(Math.random() * 50 - 25),
+        TweenMax.to(lettreFromItem[i],0.5,{
+            x: Math.floor(Math.random() * 100- 50),
             y: Math.floor(Math.random() * 50 - 25),
-            z: Math.floor(Math.random() * 50 - 25),
-            rotation: Math.floor(Math.random() * 100 - 50),
+            z: Math.floor(Math.random() * 100 - 50),
+            rotation: Math.floor(Math.random() * 250 - 125),
             opacity: 0.3,
             ease: Circ.easeOut
         })
-    }
+    };
 
     menuItem.forEach(item => item.addEventListener('mouseleave', () => {
-        for (k = 0; k < lettreFromItem.length; k++){
-            TweenMax.to(lettreFromItem[k],0.3,{
-                x: 0,
-                y: 0,
-                z: 0,
-                rotation: 0,
-                opacity: 1,
-                ease: Circ.easeIn
-            })
+        window.setTimeout(reset, 500);
+        function reset(){
+            for (k = 0; k < lettreFromItem.length; k++){
+                TweenMax.to(lettreFromItem[k],0.3,{
+                    x: 0,
+                    y: 0,
+                    z: 0,
+                    rotation: 0,
+                    opacity: 1,
+                    ease: Circ.easeIn
+                })
+            }
         }
-    }))
+    }));
 
-}))
+}));
 
 menuItem.forEach(item => item.addEventListener('click', () => {
 
@@ -64,4 +67,5 @@ menuItem.forEach(item => item.addEventListener('click', () => {
     TweenMax.to(b3, 0.1, {top:6, rotation: '0deg'});
     TweenMax.to(containerMenu, 0.5, {top : "-100%",transform: "translate(-50%,0%)" , ease: Power2.easeIn});
 
-}))
+}));
+
