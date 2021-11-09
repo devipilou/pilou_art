@@ -156,7 +156,7 @@ header {
   display: flex;
   flex-direction: column-reverse;
   padding: 0 auto;
-  background-color: #3D3D3D;
+  background-color: #ACACAF;
 }
 
 .enter-gallery {
@@ -337,6 +337,7 @@ div#slider figure img {
 }
 main {
   width: 95%;
+  min-height: 80vh;
   margin: 0 auto;
   padding: 1em 0.2em;
   text-align: center;
@@ -384,7 +385,7 @@ footer {
   width: 100%;
   padding: 0.5em;
   height: 45vh;
-  background: #CCCCCC;
+  background: #F5F5F5;
   border-top: 1px dashed #3D3D3D;
   display: flex;
   flex-direction: column;
@@ -431,7 +432,6 @@ footer h5 {
 }
 .container {
   height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
