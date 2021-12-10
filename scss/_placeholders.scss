@@ -10,22 +10,16 @@
     border: 1px solid $dark;
     border-radius: 0.5em;
     background: linear-gradient(175deg, $light 0%, $erieblue 50%);
-    box-shadow: 0.5em 0.5em 1em $dark;
+    box-shadow: 0.2em 0.2em 0.5em $black;
     color: $dark;
     transition: 0.2s ease-in-out;
     &:hover{
-        background: linear-gradient(175deg, $light 0%, $salmon 100%);
-        box-shadow: 1em 1em 2em $dark;
+        background: linear-gradient(175deg, $erieblue 0%, $light 100%);
+        box-shadow: 0.4em 0.4em 1em $dark;
         cursor: pointer;
-        p{
-            color: $blue;
-        }
-        hr{
-            background-color: $blue;
-        }
     }
     &:active{
-        background: linear-gradient(175deg, $light 0%, $orange 100%);
+        background: linear-gradient(175deg, $light 0%, $darkgray 100%);
         box-shadow: 0 0 0 white;
     }
     

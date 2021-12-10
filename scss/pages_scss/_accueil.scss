@@ -8,37 +8,40 @@
 
 body{
     font-family: $font2;
-    color: $black;
+    color: $light;
     position: relative;
     width: 100%;
     min-height: 100vh;
     min-width: 320px;
     font-size: 1rem;
     position: relative;
-    background-color: $erieblue;
+    // background-color: $black;
+    background-image: linear-gradient(147deg, transparent 0%, transparent 8%,rgba(92,171,255, 0.0784313725490196) 8%, rgba(92,171,255, 0.0784313725490196) 46%,transparent 46%, transparent 100%),linear-gradient(107deg, transparent 0%, transparent 21%,rgba(92,171,255, 0.0784313725490196) 21%, rgba(92,171,255, 0.0784313725490196) 53%,transparent 53%, transparent 100%),linear-gradient(288deg, transparent 0%, transparent 35%,rgba(92,171,255, 0.0784313725490196) 35%, rgba(92,171,255, 0.0784313725490196) 91%,transparent 91%, transparent 100%),linear-gradient(90deg, $black, $black);
+
 
 }
 h1, h2, h3{
     font-family: $font1;
-    color: $dark;
+    color: $salmon;
 }
 
 p{
     margin-bottom: 1em;
 }
 a{
-    color:$orange;
+    color: $salmon;
     text-decoration: none;
 }
 .separator{
     width:40%;
     height: 2px;
+    border: none;
     background-color: $orange;
     margin: 0 auto;
 }
 strong{
     font-size: 1.1em;
-    color: $blue;
+    color: $orange;
 }
 .hidden{
     position: absolute;

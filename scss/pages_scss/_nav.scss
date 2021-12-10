@@ -58,9 +58,10 @@ nav{
     width: auto;
     height: auto;
     min-width: 50%;
-    border: 1px solid $dark;
-    background: linear-gradient(175deg, $light 0%, $erieblue 50%);
-    box-shadow: 0.5em 0.5em 1em $dark;
+    border: 1px solid $erieblue;
+    // background: linear-gradient(175deg, $darkgray 0%, $dark 100%);
+    background-image: linear-gradient(147deg, transparent 0%, transparent 8%,rgba(92,171,255, 0.0784313725490196) 8%, rgba(92,171,255, 0.0784313725490196) 46%,transparent 46%, transparent 100%),linear-gradient(107deg, transparent 0%, transparent 21%,rgba(92,171,255, 0.0784313725490196) 21%, rgba(92,171,255, 0.0784313725490196) 53%,transparent 53%, transparent 100%),linear-gradient(288deg, transparent 0%, transparent 35%,rgba(92,171,255, 0.0784313725490196) 35%, rgba(92,171,255, 0.0784313725490196) 91%,transparent 91%, transparent 100%),linear-gradient(90deg, $dark, $dark);
+    box-shadow: 0.5em 0.5em 1em $black;
     border-radius: 0.5em;
     position: fixed;
     left: 50%;
@@ -103,7 +104,7 @@ nav{
     transition: all 0.3s;
 }
 .menuItem:hover .label{
-    color: $blue;
+    color: $erieblue;
 }
 
 @media screen and (min-width: $tablet){
