@@ -15,10 +15,7 @@ body{
     min-width: 320px;
     font-size: 1rem;
     position: relative;
-    // background-color: $black;
-    background-image: linear-gradient(147deg, transparent 0%, transparent 8%,rgba(92,171,255, 0.0784313725490196) 8%, rgba(92,171,255, 0.0784313725490196) 46%,transparent 46%, transparent 100%),linear-gradient(107deg, transparent 0%, transparent 21%,rgba(92,171,255, 0.0784313725490196) 21%, rgba(92,171,255, 0.0784313725490196) 53%,transparent 53%, transparent 100%),linear-gradient(288deg, transparent 0%, transparent 35%,rgba(92,171,255, 0.0784313725490196) 35%, rgba(92,171,255, 0.0784313725490196) 91%,transparent 91%, transparent 100%),linear-gradient(90deg, $black, $black);
-
-
+    background-image: $bg-darksheet;
 }
 h1, h2, h3{
     font-family: $font1;
@@ -71,10 +68,12 @@ strong{
     }
     .index-big-title{
         font-size:2em;
+        color: $orange;
     }
     .index-small-title{
         font-size: 1em;
         margin-bottom: 0;
+        color: $salmon;
     }
     .index-enter-text{
         font-size: 0.7em;

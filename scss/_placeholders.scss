@@ -14,13 +14,13 @@
     color: $dark;
     transition: 0.2s ease-in-out;
     &:hover{
-        background: linear-gradient(175deg, $erieblue 0%, $light 100%);
-        box-shadow: 0.4em 0.4em 1em $dark;
+        background: linear-gradient(175deg, $light 0%, $salmon 50%);
+        box-shadow: 0.4em 0.4em 1em $black;
         cursor: pointer;
     }
     &:active{
         background: linear-gradient(175deg, $light 0%, $darkgray 100%);
-        box-shadow: 0 0 0 white;
+        box-shadow: 0 0 0 $black;
     }
     
 }

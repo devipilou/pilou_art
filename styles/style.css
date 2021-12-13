@@ -13,13 +13,13 @@
   transition: 0.2s ease-in-out;
 }
 .message-accueil:hover, .enter-gallery:hover, .navigationIcon:hover {
-  background: linear-gradient(175deg, #D8EBFF 0%, #F5F5F5 100%);
-  box-shadow: 0.4em 0.4em 1em #3D3D3D;
+  background: linear-gradient(175deg, #F5F5F5 0%, #FFC396 50%);
+  box-shadow: 0.4em 0.4em 1em #1E1E1F;
   cursor: pointer;
 }
 .message-accueil:active, .enter-gallery:active, .navigationIcon:active {
   background: linear-gradient(175deg, #F5F5F5 0%, #ACACAF 100%);
-  box-shadow: 0 0 0 white;
+  box-shadow: 0 0 0 #1E1E1F;
 }
 
 nav {
@@ -77,8 +77,7 @@ nav {
   height: auto;
   min-width: 50%;
   border: 1px solid #D8EBFF;
-  background-image: linear-gradient(147deg, transparent 0%, transparent 8%, rgba(92, 171, 255, 0.0784313725) 8%, rgba(92, 171, 255, 0.0784313725) 46%, transparent 46%, transparent 100%), linear-gradient(107deg, transparent 0%, transparent 21%, rgba(92, 171, 255, 0.0784313725) 21%, rgba(92, 171, 255, 0.0784313725) 53%, transparent 53%, transparent 100%), linear-gradient(288deg, transparent 0%, transparent 35%, rgba(92, 171, 255, 0.0784313725) 35%, rgba(92, 171, 255, 0.0784313725) 91%, transparent 91%, transparent 100%), linear-gradient(90deg, #3D3D3D, #3D3D3D);
-  box-shadow: 0.5em 0.5em 1em #1E1E1F;
+  background: repeating-linear-gradient(332deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(100deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(0deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), repeating-linear-gradient(90deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), linear-gradient(90deg, #1e1e1f, #1e1e1f);
   border-radius: 0.5em;
   position: fixed;
   left: 50%;
@@ -150,7 +149,7 @@ header {
   display: flex;
   flex-direction: column-reverse;
   padding: 0 auto;
-  background-color: #1E1E1F;
+  background: repeating-linear-gradient(332deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(100deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(0deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), repeating-linear-gradient(90deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), linear-gradient(90deg, #1e1e1f, #1e1e1f);
   border-bottom: 1px solid #D8EBFF;
 }
 
@@ -381,7 +380,7 @@ footer {
   padding: 0.5em;
   height: 45vh;
   background: #3D3D3D;
-  border-top: 1px dashed #D8EBFF;
+  border-top: 1px dotted #FFC396;
   display: flex;
   flex-direction: column;
 }
@@ -518,7 +517,7 @@ body {
   min-width: 320px;
   font-size: 1rem;
   position: relative;
-  background-image: linear-gradient(147deg, transparent 0%, transparent 8%, rgba(92, 171, 255, 0.0784313725) 8%, rgba(92, 171, 255, 0.0784313725) 46%, transparent 46%, transparent 100%), linear-gradient(107deg, transparent 0%, transparent 21%, rgba(92, 171, 255, 0.0784313725) 21%, rgba(92, 171, 255, 0.0784313725) 53%, transparent 53%, transparent 100%), linear-gradient(288deg, transparent 0%, transparent 35%, rgba(92, 171, 255, 0.0784313725) 35%, rgba(92, 171, 255, 0.0784313725) 91%, transparent 91%, transparent 100%), linear-gradient(90deg, #1E1E1F, #1E1E1F);
+  background-image: repeating-linear-gradient(332deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(100deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(0deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), repeating-linear-gradient(90deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), linear-gradient(90deg, #1e1e1f, #1e1e1f);
 }
 
 h1, h2, h3 {
@@ -573,10 +572,12 @@ strong {
 }
 .message-accueil .index-big-title {
   font-size: 2em;
+  color: #FA6B05;
 }
 .message-accueil .index-small-title {
   font-size: 1em;
   margin-bottom: 0;
+  color: #FFC396;
 }
 .message-accueil .index-enter-text {
   font-size: 0.7em;

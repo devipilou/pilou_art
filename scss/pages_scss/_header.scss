@@ -6,7 +6,7 @@ header{
     display: flex;
     flex-direction: column-reverse;
     padding: 0 auto;
-    background-color: $black;
+    background: $bg-darksheet;
     // background-image: linear-gradient(147deg, transparent 0%, transparent 8%,rgba(92,171,255, 0.15) 8%, rgba(92,171,255, 0.15) 46%,transparent 46%, transparent 100%),linear-gradient(107deg, transparent 0%, transparent 21%,rgba(92,171,255, 0.15) 21%, rgba(92,171,255, 0.15) 53%,transparent 53%, transparent 100%),linear-gradient(288deg, transparent 0%, transparent 35%,rgba(92,171,255, 0.15) 35%, rgba(92,171,255, 0.15) 91%,transparent 91%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
     border-bottom: 1px solid $erieblue;
 }
