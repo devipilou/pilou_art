@@ -60,10 +60,10 @@
 .bloc-image {
     background-image: $bg-darksheet;
     border: 1px solid $salmon;
-    padding: 0.5em 1em;
+    padding: 1em;
     margin: 0.7em 0.5em;
     box-shadow: 0.2em 0.2em 0.5em $black;
-
+    cursor: pointer;
     &:hover {
         background-image: $bg-lighted-darksheet;
         box-shadow: 0.4em 0.4em 1em $black, inset 0.3em 0.3em 0.5em $dark, inset -0.15em -0.15em 0.5em $black;
@@ -99,7 +99,7 @@
     }
     #titre-image{
         position: fixed;
-        // width: 100%;
+        width: 100%;
         top: 2%;
         left: 50%;
         transform: translate(-50%,-100%);

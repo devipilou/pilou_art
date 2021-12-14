@@ -8,7 +8,6 @@ for(let blocImage of blocsImages){
         let srcImage = blocImage.childNodes[1].src;
         let altImage = blocImage.childNodes[1].alt;
         let titreImage = blocImage.childNodes[1].title;
-        console.log(affichage.childNodes[3]);
 
         // remplissage data image affichée
         affichage.childNodes[3].src = srcImage.replace('-thumb', '');
