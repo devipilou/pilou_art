@@ -303,7 +303,7 @@ div#slider figure img {
 .mini-gallery-frame {
   width: 45%;
   height: auto;
-  background-color: #3D3D3D;
+  background-image: repeating-linear-gradient(332deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(100deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(0deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), repeating-linear-gradient(90deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), linear-gradient(90deg, #232324, #1e1e1f);
   border: 1px solid #FFC396;
   padding: 0.3em 0;
 }
@@ -312,7 +312,7 @@ div#slider figure img {
 }
 
 .enter-gallery {
-  margin: auto;
+  margin: 0.5em auto;
   padding: 0.7em 1.2em;
   align-content: center;
 }
