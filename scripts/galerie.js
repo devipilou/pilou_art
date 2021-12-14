@@ -2,7 +2,7 @@ const blocsImages = document.querySelectorAll('.bloc-image');
 let affichage = document.querySelector('.affichage');
 let btnFermeture = document.querySelector('#fermeture-affichage')
 
-for(let blocImage of blocsImages){
+for (let blocImage of blocsImages) {
     blocImage.addEventListener('click', (e) => {
         // recupération data de l'image cliquée
         let srcImage = blocImage.childNodes[1].src;
@@ -16,13 +16,17 @@ for(let blocImage of blocsImages){
 
         //data titre
         affichage.childNodes[5].innerHTML = `--- ${titreImage} ---`;
-        
+
         // remontée de l'ensemble d'affichage au premier plan ! Le menu doit rester devant
         affichage.style.zIndex = 800;
 
         // retour de l'ensemble d'affichage en arrière-plan
         btnFermeture.addEventListener('click', () => {
+
             affichage.style.zIndex = -100;
+            affichage.childNodes[3].src = "";
+            affichage.childNodes[3].alt = "";
+            affichage.childNodes[3].title = "";
         })
     })
 }
