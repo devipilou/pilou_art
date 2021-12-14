@@ -1,11 +1,11 @@
-.container{
+.container {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.case{
+.case {
     @extend %case-button;
     width: 90%;
     height: 35vh;
@@ -15,60 +15,131 @@
     align-items: center;
     margin: 10px;
 }
-.titre-gallery{
+
+.titre-gallery {
     font-size: 3em;
 }
-.case-titre{
+
+.case-titre {
     justify-content: center;
     height: 20vh;
     width: 100vw;
     @extend %flex-2centers;
 }
 
-.titre-case{
+.titre-case {
     width: 100%;
-    height:25%;
+    height: 25%;
     font-size: 2.5em;
 }
 
-.case-content{
+.case-content {
     height: 100%;
     @extend %flex-2centers;
     flex-direction: column;
 }
 
-.case-image{
+.case-image {
     @extend %flex-2centers;
     margin-bottom: 5px;
 }
-.case-image-thumb{
+
+.case-image-thumb {
     width: 45%;
     height: 100%;
     margin: 2px;
 }
 
+.galerie-blocs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 
-@media screen and (min-width: $tablet){
-    .case{
+.bloc-image {
+    background-image: $bg-darksheet;
+    border: 1px solid $salmon;
+    padding: 0.5em 1em;
+    margin: 0.7em 0.5em;
+    box-shadow: 0.2em 0.2em 0.5em $black;
+
+    &:hover {
+        background-image: $bg-lighted-darksheet;
+        box-shadow: 0.4em 0.4em 1em $black, inset 0.3em 0.3em 0.5em $dark, inset -0.15em -0.15em 0.5em $black;
+    }
+
+    &:active {
+        background-image: $bg-darksheet;
+        box-shadow: 0 0 0 $black;
+    }
+}
+
+.affichage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 100vw;
+    height: 100vh;
+    
+    #background-affichage{
+        width: 100%;
+        height: 100%;
+        background-image: $bg-darksheet;
+        opacity: 0.8;
+    }
+    img {
+        position: fixed;
+        max-width: 80%;
+        max-height: 80%;
+        top: 10%;
+        left: auto;
+        transform: translate(-50%,0%);
+    }
+    #titre-image{
+        position: fixed;
+        // width: 100%;
+        top: 2%;
+        left: 50%;
+        transform: translate(-50%,-100%);
+        font-size: 3em;
+    }
+    #fermeture-affichage{
+        position: fixed;
+        bottom: 2%;
+        right: 12%;
+        font-size: 1.5em;
+        color: $salmon;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (min-width: $tablet) {
+    .case {
         flex-direction: row;
         align-items: center;
     }
-    .titre-case{
+
+    .titre-case {
         width: 25%;
-        height:auto;
+        height: auto;
 
     }
-    
 }
-@media screen and (min-width: $desktop){
-    .container{
-        height:60vh;
+
+@media screen and (min-width: $desktop) {
+    .container {
+        height: 60vh;
     }
-    .case-content{
+
+    .case-content {
         flex-direction: row;
     }
-    .case-image-thumb{
+
+    .case-image-thumb {
         max-height: 35vh;
     }
-    
+
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,11 +16,12 @@
     <!-- Custom Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oswald:wght@200&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oswald:wght@200&display=swap"
+        rel="stylesheet">
 </head>
 
 <body id="top">
-   <!-- Navigation -->
+    <!-- Navigation -->
     <div class="navigation">
         <div class="navigationIcon">
             <div class="barre b1"></div>
@@ -87,6 +89,73 @@
 
     <!-- Main -->
     <main>
+        <!-- Affichage de l'image selectionnée -->
+        <article class="affichage">
+            <div id="background-affichage"></div>
+            <img src="" alt="" title="">
+            <h3 id="titre-image"></h3>
+            <div id="fermeture-affichage">Back to gallery</div>
+        </article>
+        <!-- Lineart courant -->
+        <article class="galerie-blocs">
+            <section class="bloc-image">
+                <img src="../img/FlaurasDanceWeb-thumb.jpg" alt="image Flauras Dance" title="Flauras Dance">
+            </section>
+            <section class="bloc-image">
+                <img src="../img/BinnarySunsetWeb-thumb.jpg" alt="image Binnary Sunset" title="Binnary Sunset">
+            </section>
+            <section class="bloc-image">
+                <img src="../img/ThreeWeb-thumb.jpg" alt="image Three" title="Three">
+            </section>
+            <section class="bloc-image">
+                <img src="../img/FightingHateWithKindessWeb-thumb.jpg" alt="image Fighting Hate With Kindess"
+                    title="Fighting Hate With Kindess">
+            </section>
+            <section class="bloc-image">
+                <img src="../img/IntoTheUnknownWeb-thumb.jpg" alt="image Into The Unknown" title="Into The Unknown">
+            </section>
+            <section class="bloc-image">
+                <img src="../img/2halvesWeb-thumb.jpg" alt="image Two Halves" title="Two Halves">
+            </section>
+            <section class="bloc-image">
+                <img src="../img/AugustWeb-thumb.jpg" alt="image August" title="August">
+            </section>
+            <section class="bloc-image">
+                <img src="../img/MindmapWeb-thumb.jpg" alt="image Mindmap" title="Mindmap">
+            </section>
+            <section class="bloc-image">
+                <img src="../img/ThornsWeb-thumb.jpg" alt="image Thorns" title="Thorns">
+            </section>
+            <section class="bloc-image">
+                <img src="../img/CaringForEarthWeb-thumb.jpg" alt="image Caring For Earth" title="Caring For Earth">
+            </section>
+            <section class="bloc-image">
+                <img src="../img/Edinburg3Web-thumb.jpg" alt="image Edinburg 3" title="Edinburg 3">
+            </section>
+            <section class="bloc-image">
+                <img src="../img/Edinburg2Web-thumb.jpg" alt="image Edinburg 2" title="Edinburg 2">
+            </section>
+            <section class="bloc-image">
+                <img src="../img/Edinburg1Web-thumb.jpg" alt="image Edinburg 1" title="Edinburg 1">
+            </section>
+
+        </article>
+
+        <hr class="separator">
+
+        <!-- Lineart Inktober -->
+        <h3>Inktober</h3>
+        <article class="galerie-blocs">
+            <section class="bloc-image">
+                <img src="../img/Inktober20-07FancyWeb-thumb.jpg" alt="image Inktober20 - 07 Fancy"
+                    title="Inktober20 - 07 Fancy">
+            </section>
+            <section class="bloc-image">
+                <img src="../img/Inktober20-01to06Web-thumb.jpg" alt="image Inktober20 - 01 to 06"
+                    title="Inktober20 - 01 to 06">
+            </section>
+
+        </article>
 
     </main>
 
@@ -112,8 +181,10 @@
     </footer>
 
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="../app.js"></script>
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/galerie.js"></script>
 </body>
+
 </html>

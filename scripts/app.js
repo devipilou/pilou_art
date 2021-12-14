@@ -3,7 +3,10 @@ const containerMenu = document.querySelector('.containerMenu');
 const b1 = document.querySelector('.b1');
 const b2 = document.querySelector('.b2');
 const b3 = document.querySelector('.b3');
+
 const menuItem = document.querySelectorAll('.menuItem');
+
+
 let toggle = 0;
 
 
