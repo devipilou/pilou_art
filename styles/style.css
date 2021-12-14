@@ -1,4 +1,4 @@
-.bg-accueil, .menu, .navigationIcon {
+.bg-accueil, .case-image, .case-content, .case-titre, .menu, .navigationIcon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,12 +14,25 @@
 }
 .message-accueil:hover, .enter-gallery:hover, .navigationIcon:hover {
   background: linear-gradient(175deg, #F5F5F5 0%, #FFC396 50%);
-  box-shadow: 0.4em 0.4em 1em #1E1E1F;
+  box-shadow: 0.4em 0.4em 1em #1E1E1F, inset 0.3em 0.3em 0.5em #F5F5F5, inset -0.15em -0.15em 0.5em #3D3D3D;
   cursor: pointer;
 }
 .message-accueil:active, .enter-gallery:active, .navigationIcon:active {
   background: linear-gradient(175deg, #F5F5F5 0%, #ACACAF 100%);
   box-shadow: 0 0 0 #1E1E1F;
+}
+
+.case {
+  border: 1px solid #FFC396;
+  border-radius: 1em;
+  background-image: repeating-linear-gradient(332deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(100deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(0deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), repeating-linear-gradient(90deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), linear-gradient(90deg, #232324, #1e1e1f);
+  box-shadow: 0.5em 0.5em 0.5em #1E1E1F;
+  transition: 0.2s ease-in-out;
+}
+.case:hover {
+  background-image: repeating-linear-gradient(332deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(100deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(0deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), repeating-linear-gradient(90deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), linear-gradient(90deg, #2d2d2f, #272729);
+  box-shadow: 1em 1em 1em #1E1E1F, inset 0.3em 0.3em 0.5em #3D3D3D, inset -0.15em -0.15em 0.5em #1E1E1F;
+  cursor: pointer;
 }
 
 nav {
@@ -76,8 +89,9 @@ nav {
   width: auto;
   height: auto;
   min-width: 50%;
-  border: 1px solid #D8EBFF;
-  background: repeating-linear-gradient(332deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(100deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(0deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), repeating-linear-gradient(90deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), linear-gradient(90deg, #1e1e1f, #1e1e1f);
+  border: 1px solid #FFC396;
+  background: repeating-linear-gradient(332deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(100deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(0deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), repeating-linear-gradient(90deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), linear-gradient(90deg, #232324, #1e1e1f);
+  box-shadow: 0.4em 0.4em 1em #1E1E1F, inset 0.3em 0.3em 0.5em #3D3D3D, inset -0.15em -0.15em 0.5em #1E1E1F;
   border-radius: 0.5em;
   position: fixed;
   left: 50%;
@@ -105,7 +119,7 @@ nav {
 .item {
   left: 0;
   width: auto;
-  font-size: 2em;
+  font-size: 0.85em;
   font-family: "Kaushan Script", cursive;
 }
 
@@ -125,6 +139,11 @@ nav {
   color: #D8EBFF;
 }
 
+@media screen and (min-width: 375px) {
+  .item {
+    font-size: 1.4em;
+  }
+}
 @media screen and (min-width: 768px) {
   .item {
     font-size: 2.5em;
@@ -149,13 +168,8 @@ header {
   display: flex;
   flex-direction: column-reverse;
   padding: 0 auto;
-  background: repeating-linear-gradient(332deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(100deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(0deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), repeating-linear-gradient(90deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), linear-gradient(90deg, #1e1e1f, #1e1e1f);
-  border-bottom: 1px solid #D8EBFF;
-}
-
-.enter-gallery {
-  padding: 0.5em 1em;
-  align-content: center;
+  background: repeating-linear-gradient(332deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(100deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(0deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), repeating-linear-gradient(90deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), linear-gradient(90deg, #232324, #1e1e1f);
+  border-bottom: 1px solid #FFC396;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -206,7 +220,7 @@ div#slider {
   overflow: hidden;
   border-radius: 1em;
   margin: auto 0;
-  border: 1px solid #D8EBFF;
+  border: 1px solid #FFC396;
 }
 
 div#slider figure {
@@ -243,7 +257,7 @@ div#slider figure img {
 .welcome {
   width: 100%;
   background-color: #3D3D3D;
-  border: 1px solid #D8EBFF;
+  border: 1px solid #FFC396;
   border-radius: 1em;
   display: flex;
   flex-direction: column;
@@ -267,6 +281,8 @@ div#slider figure img {
 
 .welcome-gallery {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .welcome-gallery-text {
@@ -287,11 +303,17 @@ div#slider figure img {
   width: 45%;
   height: auto;
   background-color: #3D3D3D;
-  border: 1px solid #FA6B05;
+  border: 1px solid #FFC396;
   padding: 0.3em 0;
 }
 .mini-gallery-frame img {
   width: 90%;
+}
+
+.enter-gallery {
+  margin: auto;
+  padding: 0.7em 1.2em;
+  align-content: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -378,7 +400,7 @@ section {
 footer {
   width: 100%;
   padding: 0.5em;
-  height: 45vh;
+  min-height: 45vh;
   background: #3D3D3D;
   border-top: 1px dotted #FFC396;
   display: flex;
@@ -405,7 +427,7 @@ footer h5 {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 30vh;
+    min-height: 30vh;
   }
 
   .footer-column {
@@ -418,7 +440,7 @@ footer h5 {
 }
 @media only screen and (min-width: 1200px) {
   footer {
-    height: 20vh;
+    min-height: 20vh;
   }
 
   .footer-column, .footer-column:nth-child(1) {
@@ -434,53 +456,43 @@ footer h5 {
 
 .case {
   width: 90%;
-  height: 40%;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 10px;
+}
+
+.titre-gallery {
+  font-size: 3em;
 }
 
 .case-titre {
   justify-content: center;
-  height: 20%;
+  height: 20vh;
+  width: 100vw;
 }
 
 .titre-case {
   width: 100%;
   height: 25%;
+  font-size: 2.5em;
 }
 
-.case-item {
-  width: 90%;
-  margin-bottom: 1em;
-  height: 25%;
+.case-content {
+  height: 100%;
+  flex-direction: column;
 }
 
-.case-lineart {
-  border: 1px solid #3D3D3D;
-  border-radius: 1em;
-  background-image: linear-gradient(147deg, transparent 0%, transparent 8%, rgba(92, 171, 255, 0.0784313725) 8%, rgba(92, 171, 255, 0.0784313725) 46%, transparent 46%, transparent 100%), linear-gradient(107deg, transparent 0%, transparent 21%, rgba(92, 171, 255, 0.0784313725) 21%, rgba(92, 171, 255, 0.0784313725) 53%, transparent 53%, transparent 100%), linear-gradient(288deg, transparent 0%, transparent 35%, rgba(92, 171, 255, 0.0784313725) 35%, rgba(92, 171, 255, 0.0784313725) 91%, transparent 91%, transparent 100%), linear-gradient(90deg, white, white);
-  box-shadow: 0.5em 0.5em 1em #3D3D3D;
-  transition: 0.2s ease-in-out;
-}
-.case-lineart:hover {
-  background-image: linear-gradient(147deg, transparent 0%, transparent 8%, rgba(92, 171, 255, 0.0784313725) 8%, rgba(92, 171, 255, 0.0784313725) 46%, transparent 46%, transparent 100%), linear-gradient(107deg, transparent 0%, transparent 21%, rgba(92, 171, 255, 0.0784313725) 21%, rgba(92, 171, 255, 0.0784313725) 53%, transparent 53%, transparent 100%), linear-gradient(288deg, transparent 0%, transparent 35%, rgba(92, 171, 255, 0.0784313725) 35%, rgba(92, 171, 255, 0.0784313725) 91%, transparent 91%, transparent 100%), linear-gradient(90deg, #D8EBFF, #D8EBFF);
-  box-shadow: 1em 1em 2em #3D3D3D;
-  cursor: pointer;
+.case-image {
+  margin-bottom: 5px;
 }
 
-.case-other {
-  border: 1px solid #3D3D3D;
-  border-radius: 1em;
-  background-image: linear-gradient(147deg, transparent 0%, transparent 8%, rgba(92, 171, 255, 0.0784313725) 8%, rgba(92, 171, 255, 0.0784313725) 46%, transparent 46%, transparent 100%), linear-gradient(107deg, transparent 0%, transparent 21%, rgba(92, 171, 255, 0.0784313725) 21%, rgba(92, 171, 255, 0.0784313725) 53%, transparent 53%, transparent 100%), linear-gradient(288deg, transparent 0%, transparent 35%, rgba(92, 171, 255, 0.0784313725) 35%, rgba(92, 171, 255, 0.0784313725) 91%, transparent 91%, transparent 100%), linear-gradient(90deg, white, white);
-  box-shadow: 0.5em 0.5em 1em #3D3D3D;
-  transition: 0.2s ease-in-out;
-}
-.case-other:hover {
-  background-image: linear-gradient(147deg, transparent 0%, transparent 8%, rgba(92, 171, 255, 0.0784313725) 8%, rgba(92, 171, 255, 0.0784313725) 46%, transparent 46%, transparent 100%), linear-gradient(107deg, transparent 0%, transparent 21%, rgba(92, 171, 255, 0.0784313725) 21%, rgba(92, 171, 255, 0.0784313725) 53%, transparent 53%, transparent 100%), linear-gradient(288deg, transparent 0%, transparent 35%, rgba(92, 171, 255, 0.0784313725) 35%, rgba(92, 171, 255, 0.0784313725) 91%, transparent 91%, transparent 100%), linear-gradient(90deg, #D8EBFF, #D8EBFF);
-  box-shadow: 1em 1em 2em #3D3D3D;
-  cursor: pointer;
+.case-image-thumb {
+  width: 45%;
+  height: 100%;
+  margin: 2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -493,19 +505,18 @@ footer h5 {
     width: 25%;
     height: auto;
   }
-
-  .case-item {
-    width: 25%;
-    margin-right: 1em;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    height: 80vh;
+    height: 60vh;
+  }
+
+  .case-content {
+    flex-direction: row;
+  }
+
+  .case-image-thumb {
+    max-height: 35vh;
   }
 }
 body {
@@ -517,7 +528,7 @@ body {
   min-width: 320px;
   font-size: 1rem;
   position: relative;
-  background-image: repeating-linear-gradient(332deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(100deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(0deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), repeating-linear-gradient(90deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), linear-gradient(90deg, #1e1e1f, #1e1e1f);
+  background-image: repeating-linear-gradient(332deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(100deg, rgba(77, 77, 77, 0.12) 0px, transparent 2px, rgba(77, 77, 77, 0.12) 7px, transparent 9px, rgba(77, 77, 77, 0.12) 14px), repeating-linear-gradient(0deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), repeating-linear-gradient(90deg, rgba(77, 77, 77, 0.15) 0px, rgba(77, 77, 77, 0.15) 0px, transparent 0px, transparent 1px, rgba(77, 77, 77, 0.15) 1px, rgba(77, 77, 77, 0.15) 4px, transparent 4px, transparent 5px, rgba(77, 77, 77, 0.15) 5px, rgba(77, 77, 77, 0.15) 8px), linear-gradient(90deg, #232324, #1e1e1f);
 }
 
 h1, h2, h3 {
@@ -539,7 +550,7 @@ a {
   height: 2px;
   border: none;
   background-color: #FA6B05;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 strong {

@@ -1,26 +1,42 @@
 //Création par Pilou le 24/09/21
 
-%flex-2centers{
+%flex-2centers {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-%button-erieblue{
+%button-erieblue {
     border: 1px solid $dark;
     border-radius: 0.5em;
     background: linear-gradient(175deg, $light 0%, $erieblue 50%);
     box-shadow: 0.2em 0.2em 0.5em $black;
     color: $dark;
     transition: 0.2s ease-in-out;
-    &:hover{
+
+    &:hover {
         background: linear-gradient(175deg, $light 0%, $salmon 50%);
-        box-shadow: 0.4em 0.4em 1em $black;
+        box-shadow: 0.4em 0.4em 1em $black, inset 0.3em 0.3em 0.5em $light, inset -0.15em -0.15em 0.5em $dark;
         cursor: pointer;
     }
-    &:active{
+
+    &:active {
         background: linear-gradient(175deg, $light 0%, $darkgray 100%);
         box-shadow: 0 0 0 $black;
     }
-    
+
+}
+
+%case-button {
+    border: 1px solid $salmon;
+    border-radius: 1em;
+    background-image: $bg-darksheet;
+    box-shadow: 0.5em 0.5em 0.5em $black;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        background-image: $bg-lighted-darksheet;
+        box-shadow: 1em 1em 1em $black, inset 0.3em 0.3em 0.5em $dark, inset -0.15em -0.15em 0.5em $black;
+        cursor: pointer;
+    }
 }

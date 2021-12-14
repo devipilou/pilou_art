@@ -1,8 +1,8 @@
 //Création par Pilou le 05/10/21
 footer{
     width: 100%;
-    padding: 0.5em;;
-    height: 45vh;
+    padding: 0.5em;
+    min-height: 45vh;
     background: $dark;
     border-top: 1px dotted $salmon;
     display: flex;
@@ -29,7 +29,7 @@ footer{
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-        height: 30vh;
+        min-height: 30vh;
 
     }
     .footer-column{
@@ -42,7 +42,7 @@ footer{
 }
 @media only screen and (min-width : $desktop) {
     footer{
-        height: 20vh;
+        min-height: 20vh;
 
     }
     .footer-column, .footer-column:nth-child(1){

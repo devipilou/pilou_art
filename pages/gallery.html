@@ -20,77 +20,94 @@
 
 <body id="top">
    <!-- Navigation -->
-<div class="navigation">
-    <div class="navigationIcon">
-        <div class="barre b1"></div>
-        <div class="barre b2"></div>
-        <div class="barre b3"></div>
-    </div>
-    <div class="containerMenu">
-        <div class="menu">
-            <a href="home.html" class="menuItem">
-                <span class="item" aria-label="Home">
-                    <span class="char1" aria-hidden="true">H</span>
-                    <span class="char2" aria-hidden="true">o</span>
-                    <span class="char3" aria-hidden="true">m</span>
-                    <span class="char4" aria-hidden="true">e</span>
-                </span>
-                <span class="label">Enter my world</span>
-            </a>
-            <a href="gallery.html" class="menuItem">
-                <span class="item" aria-label="Gallery">
-                    <span class="char1" aria-hidden="true">G</span>
-                    <span class="char2" aria-hidden="true">a</span>
-                    <span class="char3" aria-hidden="true">l</span>
-                    <span class="char4" aria-hidden="true">l</span>
-                    <span class="char5" aria-hidden="true">e</span>
-                    <span class="char6" aria-hidden="true">r</span>
-                    <span class="char7" aria-hidden="true">y</span>
-                </span>
-                <span class="label">Art by Pilou</span>
-            </a>
-            <a href="about.html" class="menuItem">
-                <span class="item" aria-label="About Me">
-                    <span class="char1" aria-hidden="true">A</span>
-                    <span class="char2" aria-hidden="true">b</span>
-                    <span class="char3" aria-hidden="true">o</span>
-                    <span class="char4" aria-hidden="true">u</span>
-                    <span class="char5" aria-hidden="true">t</span>
-                    <span class="char6" aria-hidden="true"></span>
-                    <span class="char7" aria-hidden="true">M</span>
-                    <span class="char8" aria-hidden="true">e</span>
-                </span>
-                <span class="label">Learn more about Pilou</span>
-            </a>
-            <a href="contact.html" class="menuItem">
-                <span class="item" aria-label="Contact">
-                    <span class="char1" aria-hidden="true">C</span>
-                    <span class="char2" aria-hidden="true">o</span>
-                    <span class="char3" aria-hidden="true">n</span>
-                    <span class="char4" aria-hidden="true">t</span>
-                    <span class="char5" aria-hidden="true">a</span>
-                    <span class="char6" aria-hidden="true">c</span>
-                    <span class="char7" aria-hidden="true">t</span>
-                </span>
-                <span class="label">Reach to me</span>
-            </a>
+    <div class="navigation">
+        <div class="navigationIcon">
+            <div class="barre b1"></div>
+            <div class="barre b2"></div>
+            <div class="barre b3"></div>
+        </div>
+        <div class="containerMenu">
+            <div class="menu">
+                <a href="home.html" class="menuItem">
+                    <span class="item" aria-label="Home">
+                        <span class="char1" aria-hidden="true">H</span>
+                        <span class="char2" aria-hidden="true">o</span>
+                        <span class="char3" aria-hidden="true">m</span>
+                        <span class="char4" aria-hidden="true">e</span>
+                    </span>
+                    <span class="label">Enter my world</span>
+                </a>
+                <a href="gallery.html" class="menuItem">
+                    <span class="item" aria-label="Gallery">
+                        <span class="char1" aria-hidden="true">G</span>
+                        <span class="char2" aria-hidden="true">a</span>
+                        <span class="char3" aria-hidden="true">l</span>
+                        <span class="char4" aria-hidden="true">l</span>
+                        <span class="char5" aria-hidden="true">e</span>
+                        <span class="char6" aria-hidden="true">r</span>
+                        <span class="char7" aria-hidden="true">y</span>
+                    </span>
+                    <span class="label">Art by Pilou</span>
+                </a>
+                <a href="about.html" class="menuItem">
+                    <span class="item" aria-label="About Me">
+                        <span class="char1" aria-hidden="true">A</span>
+                        <span class="char2" aria-hidden="true">b</span>
+                        <span class="char3" aria-hidden="true">o</span>
+                        <span class="char4" aria-hidden="true">u</span>
+                        <span class="char5" aria-hidden="true">t</span>
+                        <span class="char6" aria-hidden="true"></span>
+                        <span class="char7" aria-hidden="true">M</span>
+                        <span class="char8" aria-hidden="true">e</span>
+                    </span>
+                    <span class="label">Learn more about Pilou</span>
+                </a>
+                <a href="contact.html" class="menuItem">
+                    <span class="item" aria-label="Contact">
+                        <span class="char1" aria-hidden="true">C</span>
+                        <span class="char2" aria-hidden="true">o</span>
+                        <span class="char3" aria-hidden="true">n</span>
+                        <span class="char4" aria-hidden="true">t</span>
+                        <span class="char5" aria-hidden="true">a</span>
+                        <span class="char6" aria-hidden="true">c</span>
+                        <span class="char7" aria-hidden="true">t</span>
+                    </span>
+                    <span class="label">Reach to me</span>
+                </a>
+            </div>
         </div>
     </div>
-</div>
-    <!-- Main -->
-    <main class="container">
-        <article class="case case-titre">
+
+    <!-- Header -->
+    <header>
+        <article class="case-titre">
             <h2 class="titre-gallery">Gallery</h2>
         </article>
-        <div onclick="window.location.href='gallery-lineart.html';" class="case case-lineart">
+    </header>
+    
+    <!-- Main -->
+    <main class="container">
+        <article onclick="window.location.href='gallery-lineart.html';" class="case case-lineart">
             <h3 class="titre-case">Lineart</h3>
-            <p>Work in progress - Gallery</p>  
-        </div>
+            <div class="case-content">
+                <div class="case-image">
+                    <img src="../img/ThornsWeb.jpg" alt="image test" class="case-image-thumb">
+                    <img src="../img/MindmapWeb.jpg" alt="image test" class="case-image-thumb">
+                </div>
+                <p>Gallery of (mostly&nbspblack&white) lineart</p>
+            </div>
+        </article>
         
-        <div onclick="window.location.href='gallery-other.html';" class="case case-other">
+        <article onclick="window.location.href='gallery-other.html';" class="case case-other">
             <h3 class="titre-case">Other Media</h3>
-            <p>Work in progress - Gallery</p>
-        </div>
+            <div class="case-content">
+                <div class="case-image">
+                    <img src="../img/test01.jpg" alt="image test" class="case-image-thumb">
+                    <img src="../img/test02.jpg" alt="image test" class="case-image-thumb">
+                </div>
+                <p>Gallery of every other media</p>
+            </div>
+        </article>
     </main>
 <!-- Footer -->
 <footer>
