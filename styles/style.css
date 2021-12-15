@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.message-accueil, .enter-gallery, .navigationIcon {
+.message-accueil, .affichage #fermeture-affichage, .enter-gallery, .navigationIcon {
   border: 1px solid #3D3D3D;
   border-radius: 0.5em;
   background: linear-gradient(175deg, #F5F5F5 0%, #D8EBFF 50%);
@@ -12,12 +12,12 @@
   color: #3D3D3D;
   transition: 0.2s ease-in-out;
 }
-.message-accueil:hover, .enter-gallery:hover, .navigationIcon:hover {
+.message-accueil:hover, .affichage #fermeture-affichage:hover, .enter-gallery:hover, .navigationIcon:hover {
   background: linear-gradient(175deg, #F5F5F5 0%, #FFC396 50%);
   box-shadow: 0.4em 0.4em 1em #1E1E1F, inset 0.3em 0.3em 0.5em #F5F5F5, inset -0.15em -0.15em 0.5em #3D3D3D;
   cursor: pointer;
 }
-.message-accueil:active, .enter-gallery:active, .navigationIcon:active {
+.message-accueil:active, .affichage #fermeture-affichage:active, .enter-gallery:active, .navigationIcon:active {
   background: linear-gradient(175deg, #F5F5F5 0%, #ACACAF 100%);
   box-shadow: 0 0 0 #1E1E1F;
 }
@@ -553,10 +553,11 @@ footer h5 {
 }
 .affichage #fermeture-affichage {
   position: fixed;
-  bottom: 2%;
+  top: 10%;
   right: 12%;
-  font-size: 1.5em;
-  color: #FFC396;
+  transform: translate(0, -100%);
+  padding: 0.5em;
+  color: #3D3D3D;
   cursor: pointer;
 }
 
