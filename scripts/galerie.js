@@ -1,6 +1,7 @@
 const blocsImages = document.querySelectorAll('.bloc-image');
 let affichage = document.querySelector('.affichage');
 let btnFermeture = document.querySelector('#fermeture-affichage')
+let fondOpaque = document.querySelector('#background-affichage');
 
 for (let blocImage of blocsImages) {
     blocImage.addEventListener('click', (e) => {
@@ -22,6 +23,13 @@ for (let blocImage of blocsImages) {
 
         // retour de l'ensemble d'affichage en arrière-plan
         btnFermeture.addEventListener('click', () => {
+
+            affichage.style.zIndex = -100;
+            affichage.childNodes[3].src = "";
+            affichage.childNodes[3].alt = "";
+            affichage.childNodes[3].title = "";
+        })
+        fondOpaque.addEventListener('click', () => {
 
             affichage.style.zIndex = -100;
             affichage.childNodes[3].src = "";
